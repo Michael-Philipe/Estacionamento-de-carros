@@ -32,6 +32,9 @@ body {
 
  background-color: #3195cf;
 }
+#cadastrar {
+	cursor: pointer;
+}
 
 td {
   text-align: center;
