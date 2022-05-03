@@ -1,0 +1,113 @@
+body {
+  height: 100vh;
+    background-color: #dedede;
+}
+
+.title {
+  text-align: center;
+  font-size: 42px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+
+.container input {
+  margin-bottom: 8px;
+}
+
+.table {
+  margin: 30px auto;
+  background-color: #9e9e9eb0;
+  width: 450px;
+}
+
+.table thead tr th{
+ width: 50px;
+ height: 50px; 
+
+ background-color: #3195cf;
+}
+
+td {
+  text-align: center;
+  height: 30px;
+  text-transform: capitalize;
+}
+#patio {
+  background: blanchedalmond;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+		-webkit-tap-highlight-color: transparent;
+}
+
+.delete {
+	width: 100px;
+	height: 40px;
+	cursor: pointer;
+	background: red;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+	background: #e62222;
+}
+
+.delete, .delete span {
+	transition: 200ms;
+}
+
+.delete .text {
+	transform: translateX(13px);
+	color: white;
+	font-weight: bold;
+}
+
+.delete .icon {
+	position: absolute;
+	border-left: 1px solid #c41b1b;
+  padding-left: 5px;
+	transform: translate(69px, -13px);
+	height: 12px;
+	width: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.delete svg {
+	width: 15px;
+	fill: #eee;
+}
+
+.delete:hover {
+	background: #ff3636;
+}
+
+.delete:hover .text {
+	color: transparent;
+}
+
+.delete:hover .icon {
+	width: 100px;
+	border-left: none;
+	transform: translate(-10px, -13px);
+}
+
+.delete:focus {
+	outline: none;
+}
+
+.table thead tr th:nth-child(3) {
+  width: 100px;
+}
